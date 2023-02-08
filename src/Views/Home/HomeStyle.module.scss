@@ -1,0 +1,454 @@
+.homeBody {
+    background-image: linear-gradient(to bottom right, #0F2A5F, black);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s;
+}
+
+.homeBody .home {
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 80px 120px 0px 120px;
+}
+
+.homeBody .home .desk {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+}
+.homeBody .home .desk .earth {
+    position: absolute;
+    right: -300px;
+    z-index: 0;
+}
+.homeBody .home .desk .earth img {
+    width: 745px;
+}
+
+.deskContainer {
+    color: white;
+    position: relative;
+    z-index: 5;
+    width: 65%;
+    margin-top: 80px;
+}
+.deskContainer p:nth-child(1) {
+    font-weight: 500;
+    font-size: 55px;
+    position: relative;
+}
+.deskContainer p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 200;
+    width: 40%;
+    position: relative;
+    top: -24px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .homeBody .home .desk .earth{
+        right: -200px;
+        top: 50px;
+    }
+    .homeBody .home .desk .earth img {
+        width: 645px;
+    }
+}
+
+.homeBody .home .listFeature {
+    color: white;
+    margin-top: 300px;
+}
+.homeBody .home .listFeature p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 600;
+}
+.homeBody .home .listFeature .cardList {
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.homeBody .home .listFeature
+ .cardList .featureImgContainer {
+    width: 175px;
+ }
+.homeBody .home .listFeature  .cardList .cardSpecial {
+    width: 455px;
+    padding: 20px 20px;
+    background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+}
+.homeBody .home .listFeature  .cardList .cardSpecial .cardTitleSpecial {
+    font-size: 25px;
+    font-weight: 700;
+ }
+.homeBody .home .listFeature  .cardList .cardSpecial .satelite {
+    width: 250px;
+    left: -120px;
+    position: absolute;
+}
+@media only screen and (max-width: 1300px) {
+    .homeBody .home .listFeature  .cardList .cardSpecial {
+        width: 350px;
+        padding: 20px 20px;
+        background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+    }
+    .homeBody .home .listFeature  .cardList .cardSpecial .satelite {
+        width: 170px;
+        left: -70px;
+        top: 10px;
+    }
+} 
+.homeBody .home .listFeature  .cardList .card {
+    width: 290px;
+    height: 160px;
+    padding: 15px 19px;
+    background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+}
+.homeBody .home .listFeature  .cardList .card .cardTitle {
+    font-size: 20px;
+    font-weight: 700;
+}
+.homeBody .home .listFeature  .cardList .card .cardDesk {
+    font-size: 12px;
+    margin-left: 20px;
+}
+.homeBody .home .listFeature  .cardList .card .imgOne {
+    width: 170px;
+    position: absolute;
+    left: -60px;
+    top: 0px;
+}
+.homeBody .home .listFeature  .cardList .card .imgTwo {
+    width: 85px;
+    position: "absolute";
+    left: "0px";
+    top: "-25px"
+}
+.cardSpecial .specialDeskContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.card .specialDeskContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.cardSpecial .specialDeskContainer .specialDesk {
+    position: relative;
+    left: 20px;
+}
+.cardSpecial .specialDeskContainer .specialDesk .specialDeskInfo {
+    font-size: 13px;
+}
+.cardSpecial .specialDeskContainer .specialDesk .featureTitle  {
+    margin-top: 10px;
+    text-align: start;
+}
+
+.homeBody .information {
+    margin-top: 150px;
+    background-color: #01172E;
+    padding: 50px 120px;
+}
+.information .informationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+.information .informationContainer .teksOne p {
+    font-weight: 700;
+    font-size: 30px;
+}
+.information .informationContainer .teksTwo {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+
+.homeBody .planets {
+    min-width: 100vw;
+    min-height: 100vh;
+    color: white;
+    margin-top: 250px;
+    position: relative;
+
+    & hr {
+        width: 60%;
+        position: absolute;
+        bottom: 20px;
+        right: 165px;
+    }
+
+    & .planetTitle {
+        font-size: 55px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+    }
+
+    & .planetsContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    & .swiperContainer {
+        position: relative;
+        left: -250px;
+        width: 50%;
+      }
+      
+      
+}
+
+  @media (max-width: 1700px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 58%;
+          }
+    
+          .swiper-slide img {
+            width: 800px;
+        }
+    }
+  }
+  @media (max-width: 1521px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 65%;
+
+          }
+          .contentPlanet{
+            position: relative;
+            left: -60px;
+          }
+    
+          .swiper-slide img {
+            width: 800px;
+        }
+    }
+  }
+  @media (max-width: 1425px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 65%;
+          }
+        .contentPlanet{
+            position: relative;
+            left: -60px;
+          }
+        .swiper-slide img {
+            width: 800px;
+        }
+    }
+  }
+  @media (max-width: 1345px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 70%;
+          }
+        
+    }
+  }
+  @media (max-width: 1225px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 80%;
+          }
+        
+    }
+  }
+
+.homeBody .astronaut {
+    color: white;
+    min-height: 100vh;
+    margin-top: 300px;
+}
+.deskAstroContainer {
+    position: relative;
+    top: 20px;
+    width: 80%;
+}
+.astronautDesk{
+    width: 120%;
+}
+.deskAstro{
+    font-weight: 300;
+    font-size: 23px;
+}
+@media only screen and (max-width: 1650px) {
+    .deskAstro{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .deskAstroContainer{
+        width: 60%;
+    }
+}
+
+.homeBody .iss {
+    color: white;
+    min-height: 100vh;
+    margin: 150px 0px 0px 0px;
+}
+
+@media (max-width: 400px) {
+    .homeBody .home {
+        padding: 20px 20px 0px 20px
+    }
+    .homeBody .home .desk .earth{
+        right: -100px;
+    }
+    .homeBody .home .desk .earth img {
+        width: 200px;
+    }
+    .deskContainer p:nth-child(1) {
+        font-weight: 600;
+        font-size: 18px;
+        position: relative;
+    }
+    .deskContainer p:nth-child(2) {
+        font-size: 10px;
+        width: 80%;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .homeBody .home .listFeature {
+        color: white;
+        margin-top: 120px;
+    }
+    .homeBody .home .listFeature hr {
+     width: 90%;   
+    }
+    .homeBody .home .listFeature p:nth-child(1) {
+        font-size: 12px;
+    }
+    .homeBody .home .listFeature .cardList {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homeBody .home .listFeature  .cardList .cardSpecial {
+        width: 200px;
+        padding: 10px 15px;
+        background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+    }
+    .homeBody .home .listFeature  .cardList .card {
+        width: 200px;
+        height: 160px;
+        padding: 10px 15px;
+        background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+    }
+    .homeBody .home .listFeature  .cardList .card .imgOne {
+        width: 120px;
+        left: -40px;
+        position: relative;
+    }
+    .homeBody .home .listFeature  .cardList .card .imgTwo {
+          width: 85px;
+          position: "absolute";
+          left: "0px";
+          top: "-15px"
+    }
+    .homeBody .home .listFeature  .cardList .card img {
+        width: 70px;
+    }
+    .homeBody .home .listFeature  .cardList .cardSpecial .satelite {
+        width: 80px;
+        left: -50px;
+    }
+    .homeBody .home .listFeature  .cardList .cardSpecial .cardTitleSpecial {
+        font-size: 12px;
+    }
+    .homeBody .home .listFeature  .cardList .card .cardTitle {
+        font-size: 12px;
+    }
+    
+    .homeBody .home .listFeature
+    .cardList .featureImgContainer {
+        width: 50%;
+        display: inline;
+    }
+    .cardSpecial .specialDeskContainer {
+        flex-direction: column;
+    }
+    .cardSpecial .specialDeskContainer .specialDesk .featureTitle  {
+        margin-top: 10px;
+        text-align: start;
+    }
+    .cardSpecial .specialDeskContainer .specialDesk .specialDeskInfo p:nth-child(1) {
+        font-size: 9px;
+        font-weight: 400;
+    }
+    .cardSpecial .specialDeskContainer .specialDesk {
+        position: relative;
+        left: 40px;
+    }
+    .cardSpecial .specialDeskContainer .specialDesk .specialDeskInfo {
+        font-size: 9px;
+        
+    }
+    .homeBody .home .listFeature  .cardList .card .cardDesk {
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .homeBody .information {
+        margin-top: 150px;
+        background-color: #01172E;
+        padding: 20px 20px;
+    }
+    .information .informationContainer {
+        flex-direction: column;
+    }
+    .information .informationContainer .teksOne p {
+        font-size: 18px;
+    }
+    .information .informationContainer .teksTwo {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .homeBody .planets {
+        margin-top: 100px;
+        position: relative;
+
+        & hr {
+            display: flex;
+            justify-content: start;
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            width: 75%;
+            margin: 0px 30px;
+        }
+
+        & .planetTitle {
+            font-size: 30px;
+        }
+    
+        & .planetsContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        & .swiperContainer {
+            position: relative;
+            left: 0px;
+            width: 100%;
+          }
+    }
+}
+
+

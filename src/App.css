@@ -1,0 +1,129 @@
+body {
+  overflow-x: hidden;
+}
+
+.swiper-slide img {
+  width: 930px;
+}
+.contentPlanet{
+  position: relative;
+  left: -50px;
+}
+.contentPlanet .planetName {
+  font-weight: 700;
+  font-size: 30px;
+}
+.contentPlanet .planetDesk {
+  font-weight: 300;
+  font-size: 20px;
+  width: 100%;
+  position: relative;
+  top: -5px;
+}
+
+.contentPlanet .planetIconInfo {
+  width: 100%;
+  display: flex;
+  gap: 80px;
+}
+
+.detailPlanet {
+  width: 100%;
+  display: flex;
+  gap: 80px;
+}
+
+.detailPlanet .detail {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.detailPlanet .detailPlanetContainer {
+  margin-top: 150px;
+}
+
+@media only screen and (max-width: 1750px) {
+  .detailPlanet .detail {
+    font-size: 23px;
+    font-weight: 300;
+  }
+}
+@media only screen and (max-width: 1521px) {
+  .detailPlanet .detail {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .detailPlanet .detail {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 400px) {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+
+  }
+  .swiper-slide img {
+    width: 150px;
+    
+  }
+  .contentPlanet {
+    left: 0;
+  }
+  .contentPlanet .planetName {
+    font-size: 20px;
+    text-align: center;
+  }
+  .contentPlanet .planetDesk {
+    font-size: 10px;
+    padding: 0px 30px;
+    text-align: center;
+  }
+  .contentPlanet .planetIconInfo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 10px;
+    padding: 0px 30px;
+  }
+  
+  .detailPlanet {
+    flex-direction: column;
+    padding: 0px 30px;
+    gap: 0px;
+    height: 40%;
+  }
+  .detailPlanet .detailPlanetContainer {
+    margin-top: 50px;
+  }
+  .detailPlanet .detailPlanetContainer:nth-child(2) {
+    margin-bottom: 60px;
+  }
+}
+
+
+
+
+  .swiper-button-next:after {
+    color:white;
+
+  }
+  .swiper-button-prev:after {
+    color:white;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 15px;
+    border-radius: 12px;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: white;
+    width: 25px;
+  }
+
+  
