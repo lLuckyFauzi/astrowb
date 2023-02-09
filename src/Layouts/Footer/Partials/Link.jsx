@@ -1,18 +1,12 @@
 import React from "react";
+import FooterStyle from "../FooterStyle.module.scss";
 
 const Link = (props) => {
   const { title, link } = props;
   return (
-    <div
-      style={{
-        position: "relative",
-        top: "10px",
-      }}
-    >
-      <p style={{ fontWeight: 400, fontSize: "20px", color: "#7E7E7E" }}>
-        {title}
-      </p>
-      <div style={{ fontWeight: 400, fontSize: "17px" }}>{link}</div>
+    <div className={FooterStyle.link}>
+      <p className={FooterStyle.linkTitle}>{title}</p>
+      <div className={FooterStyle.linkList}>{link}</div>
     </div>
   );
 };

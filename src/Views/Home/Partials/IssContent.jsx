@@ -2,59 +2,31 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PrimaryButton from "../../../Components/Button/Primary";
 import ISS from "/image/iss.png";
+import HomeStyle from "../HomeStyle.module.scss";
 
 const IssContent = () => {
   return (
-    <div
-      style={{
-        position: "relative",
-        padding: "47px 120px",
-        backgroundImage:
-          "linear-gradient(90.53deg, rgba(0, 39, 78, 0.6) 19.41%, rgba(0, 39, 78, 0)",
-      }}
-    >
-      <div
-        style={{
-          width: "50%",
-        }}
-      >
-        <p
-          data-aos="fade-right"
-          style={{
-            fontWeight: "700",
-            fontSize: "30px",
-          }}
-        >
+    <div className={HomeStyle.issContentContainer}>
+      <div className={HomeStyle.issDetail}>
+        <p data-aos="fade-right" className={HomeStyle.detailOne}>
           01
         </p>
-        <p
-          data-aos="fade-right"
-          style={{
-            fontWeight: "300",
-            fontSize: "17px",
-          }}
-        >
+        <p data-aos="fade-right" className={HomeStyle.detailIss}>
           Merupakan sebuah stasiun luar angkasa modular yang terletak di orbit
           bumi rendah Berfungsi sebagai laboratorium penelitian gravitasi mikro
           dan lingkungan luar angkasa, yang mana penelitian ilmiah ini mencakupi
           bidang astrobiologi, astronomi, meteorologi, dan fisika.
         </p>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            paddingTop: "15px",
-          }}
-        >
+        <div className={HomeStyle.issInfoContainer}>
           <Link
             to={"/iss"}
             style={{
               color: "white",
             }}
           >
-            <PrimaryButton style={{ borderRadius: "17px" }}>
-              Track Now
-            </PrimaryButton>
+            <div className={HomeStyle.butnIss}>
+              <PrimaryButton>Track Now</PrimaryButton>
+            </div>
           </Link>
           <div
             style={{
@@ -71,16 +43,8 @@ const IssContent = () => {
           </div>
         </div>
       </div>
-      <div style={{ position: "absolute", right: "120px", top: "-160px" }}>
-        <img
-          data-aos="zoom-in-up"
-          data-aos-duration="1100"
-          src={ISS}
-          alt=""
-          style={{
-            width: "500px",
-          }}
-        />
+      <div className={HomeStyle.issImgContainer}>
+        <img data-aos="zoom-in-up" data-aos-duration="1100" src={ISS} alt="" />
       </div>
     </div>
   );

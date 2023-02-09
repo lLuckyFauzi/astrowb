@@ -99,39 +99,23 @@ const Home = () => {
         <hr />
       </div>
       <div className={HomeStyle.astronaut}>
-        <p
-          style={{
-            fontWeight: 700,
-            fontSize: "55px",
-            textAlign: "center",
-          }}
-        >
-          Astronaut
-        </p>
-        <div>
-          <AstronautList />
-        </div>
+        <p className={HomeStyle.astronautTitle}>Astronaut</p>
+        <AstronautList />
       </div>
       <div className={HomeStyle.iss}>
-        <div style={{ padding: "0px 120px" }}>
+        <div className={HomeStyle.issContainer}>
           <p
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-center"
-            style={{ fontWeight: "700", fontSize: "60px" }}
+            className={HomeStyle.issTitle}
           >
             ISS Satellite Tracker
           </p>
           <p
             data-aos="fade-right"
-            data-aos-duration="1000"
-            style={{
-              fontWeight: "200",
-              fontSize: "20px",
-              position: "relative",
-              top: "-50px",
-              width: "50%",
-            }}
+            data-aos-duration="1200"
+            className={HomeStyle.issSimpleDesk}
           >
             ISS merupakan singkatan dari Internasional Space Station, atau dalam
             bahasa indonesia disebut Stasiun Luar Angkasa Nasional.
