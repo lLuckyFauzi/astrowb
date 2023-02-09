@@ -24,6 +24,7 @@ const HomeDesk = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}
         transition={{ delay: 1.2, duration: 1 }}
+        className={HomeStyle.deskBtn}
       >
         <PrimaryButton>Explore</PrimaryButton>
       </motion.div>

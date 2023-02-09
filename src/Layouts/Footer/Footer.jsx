@@ -1,5 +1,5 @@
 import React from "react";
-import FooterStyle from "./FooterStyle.module.css";
+import FooterStyle from "./FooterStyle.module.scss";
 import Link from "./Partials/Link";
 import Logo from "/image/logo/astroLogo.png";
 
@@ -10,21 +10,12 @@ const Footer = () => {
         <img src={Logo} alt="Logo" />
         <p>AstroWb</p>
       </div>
-      <div className={FooterStyle.content}>
-        <div>
-          <p style={{ fontWeight: 400, fontSize: "30px" }}>
+      <div className={FooterStyle.contentContainer}>
+        <div className={FooterStyle.content}>
+          <p className={FooterStyle.footerTitle}>
             <b>SMK</b> Yadika Soreang
           </p>
-          <p
-            style={{
-              width: "300px",
-              textDecoration: "1px solid underline",
-              fontWeight: 400,
-              fontSize: "12px",
-              position: "relative",
-              top: "-20px",
-            }}
-          >
+          <p className={FooterStyle.location}>
             Jl. Raya Soreang, Cingcin, Kec. Soreang, Kabupaten Bandung, Jawa
             Barat 40921
           </p>

@@ -12,90 +12,31 @@ const AstronautList = () => {
     setIndex(active);
   };
   return (
-    <div
-      style={{
-        backgroundColor: "rgba(0, 80, 160, 0.3)",
-        height: "160px",
-        display: "flex",
-        gap: "50px",
-        alignItems: "center",
-        padding: "0px 120px",
-      }}
-    >
-      <div
-        style={{
-          width: "30%",
-          height: "600px",
-          overflowX: "hidden",
-          position: "relative",
-          top: "40px",
-        }}
-      >
+    <div className={HomeStyle.astoListContainer}>
+      <div className={HomeStyle.swiperAstoContainer}>
         <Swiper
           onSlideChange={(swiper) => {
             listenSlideIndex(swiper.activeIndex);
           }}
-          className="mySwiper"
+          className={HomeStyle.mySwiper}
           slidesPerView={1}
           centeredSlides={true}
           pagination={{ clickable: true }}
           modules={[Pagination]}
-          style={{
-            width: "310px",
-            height: "100%",
-            overflowX: "hidden",
-            position: "relative",
-            display: "flex",
-            justifyContent: "center",
-          }}
         >
           {AstronautData.map((el) => {
             return (
               <SwiperSlide>
-                <img
-                  id={el.id}
-                  src={el.path}
-                  style={{
-                    width: "310px",
-                    borderRadius: "130px",
-                    border: "8px solid rgba(0, 80, 160, 0.45)",
-                    position: "relative",
-                    top: "90px",
-                  }}
-                  alt={el.nama}
-                />
+                <img id={el.id} src={el.path} alt={el.nama} />
               </SwiperSlide>
             );
           })}
         </Swiper>
       </div>
       <div className={HomeStyle.deskAstroContainer}>
-        <p
-          style={{
-            fontWeight: 700,
-            fontSize: "40px",
-          }}
-        >
-          {astronaut.nama}
-        </p>
-        <p
-          style={{
-            fontWeight: 300,
-            fontSize: "15px",
-            position: "relative",
-            top: "-40px",
-          }}
-        >
-          {astronaut.exist}
-        </p>
-        <div
-          style={{
-            position: "absolute",
-            display: "flex",
-            gap: "46px",
-            top: "160px",
-          }}
-        >
+        <p className={HomeStyle.astroName}>{astronaut.nama}</p>
+        <p className={HomeStyle.exist}>{astronaut.exist}</p>
+        <div className={HomeStyle.astroDetail}>
           <div className={HomeStyle.astronautDesk}>
             <p style={{ fontWeight: 700, fontSize: "35px" }}>01</p>
             <p className={HomeStyle.deskAstro}>{astronaut.detail[0]}</p>
