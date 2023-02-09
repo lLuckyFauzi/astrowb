@@ -1,0 +1,94 @@
+.icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.icon .iconImg {
+    background-image: linear-gradient(to top right, #00274e46, #0050a04d);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icon .iconImg img {
+    width: 28px;
+}
+
+.icon .iconTitle {
+    font-size: 15px;
+    font-weight: 100;
+    position: relative;
+    top: 15px;
+}
+.icon .iconContent {
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    top: 5px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .icon .iconImg {
+        background-image: linear-gradient(to top right, #00274e46, #0050a04d);
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon .iconImg img {
+        width: 20px;
+    }
+    
+
+    .icon .iconTitle {
+        font-size: 12px;
+    }
+    .icon .iconContent {
+        font-size: 15px;
+    }
+    
+}
+@media only screen and (max-width: 1380px) {
+    .icon .iconImg {
+        background-image: linear-gradient(to top right, #00274e46, #0050a04d);
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 7px;
+    }
+    .icon .iconImg img {
+        width: 20px;
+    }
+    
+
+    .icon .iconTitle {
+        font-size: 16px;
+    }
+    .icon .iconContent {
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 400px) {
+    .icon {
+        width: 50%;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .icon .iconTitle {
+        font-size: 13px;
+    }
+    .icon .iconContent {
+        font-size: 9px;
+    }
+}

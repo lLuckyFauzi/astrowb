@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    z-index: 99;
+}
+
+.navbar .burger {
+    display: none;
+}
+
+.navbar .burgerActive {
+    display: none;
+}
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.navbar .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .logo p {
+    padding-top: 15px;
+}
+
+.navbar .link {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-weight: 200;
+    font-size: 20px;
+    padding-top: 15px;
+    transition: 0.3s;
+}
+.navbar .link .listLink {
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 500px) {
+    .navContainer {
+        color: red;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .navbar {
+        padding: 0px 20px;
+        justify-content: space-between;
+        gap:50px;
+    }
+
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .navbar .logo img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar .link {
+        display: none;
+        transition: 0.3s;
+    }
+
+    .navbar .linkActive {
+        transition: 0.3s;
+        padding-top: 50px;
+        background-color: #061127;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .navbar .linkActive .listLink{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .navbar .burger {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .linkActive .burgerActive {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 28px;
+    }
+    .navbar img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+}

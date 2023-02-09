@@ -1,0 +1,702 @@
+.homeBody {
+    background-image: linear-gradient(to bottom right, #0F2A5F, black);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s;
+}
+
+.homeBody .home {
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 80px 120px 0px 120px;
+}
+
+.homeBody .home .desk {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+
+    & .deskBtn {
+        width: 200px;
+    }
+}
+.homeBody .home .desk .earth {
+    position: absolute;
+    right: -300px;
+    z-index: 0;
+}
+.homeBody .home .desk .earth img {
+    width: 745px;
+}
+
+.deskContainer {
+    color: white;
+    position: relative;
+    z-index: 5;
+    width: 65%;
+    margin-top: 80px;
+}
+.deskContainer p:nth-child(1) {
+    font-weight: 500;
+    font-size: 55px;
+    position: relative;
+}
+.deskContainer p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 200;
+    width: 40%;
+    position: relative;
+    top: -24px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .homeBody .home .desk .earth{
+        right: -200px;
+        top: 50px;
+    }
+    .homeBody .home .desk .earth img {
+        width: 645px;
+    }
+}
+
+.homeBody .home .listFeature {
+    color: white;
+    margin-top: 300px;
+}
+.homeBody .home .listFeature p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 600;
+}
+.homeBody .home .listFeature .cardList {
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.homeBody .home .listFeature
+ .cardList .featureImgContainer {
+    width: 175px;
+ }
+.homeBody .home .listFeature  .cardList .cardSpecial {
+    width: 455px;
+    padding: 20px 20px;
+    background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+}
+.homeBody .home .listFeature  .cardList .cardSpecial .cardTitleSpecial {
+    font-size: 25px;
+    font-weight: 700;
+ }
+.homeBody .home .listFeature  .cardList .cardSpecial .satelite {
+    width: 250px;
+    left: -120px;
+    position: absolute;
+}
+@media only screen and (max-width: 1300px) {
+    .homeBody .home .listFeature  .cardList .cardSpecial {
+        width: 350px;
+        padding: 20px 20px;
+        background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+    }
+    .homeBody .home .listFeature  .cardList .cardSpecial .satelite {
+        width: 170px;
+        left: -70px;
+        top: 10px;
+    }
+} 
+.homeBody .home .listFeature  .cardList .card {
+    width: 290px;
+    height: 160px;
+    padding: 15px 19px;
+    background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+}
+.homeBody .home .listFeature  .cardList .card .cardTitle {
+    font-size: 20px;
+    font-weight: 700;
+}
+.homeBody .home .listFeature  .cardList .card .cardDesk {
+    font-size: 12px;
+    margin-left: 20px;
+}
+.homeBody .home .listFeature  .cardList .card .imgOne {
+    width: 170px;
+    position: absolute;
+    left: -60px;
+    top: 0px;
+}
+.homeBody .home .listFeature  .cardList .card .imgTwo {
+    width: 85px;
+    position: "absolute";
+    left: "0px";
+    top: "-25px"
+}
+.cardSpecial .specialDeskContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.card .specialDeskContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.cardSpecial .specialDeskContainer .specialDesk {
+    position: relative;
+    left: 20px;
+}
+.cardSpecial .specialDeskContainer .specialDesk .specialDeskInfo {
+    font-size: 13px;
+}
+.cardSpecial .specialDeskContainer .specialDesk .featureTitle  {
+    margin-top: 10px;
+    text-align: start;
+}
+
+.homeBody .information {
+    margin-top: 150px;
+    background-color: #01172E;
+    padding: 50px 120px;
+}
+.information .informationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+.information .informationContainer .teksOne p {
+    font-weight: 700;
+    font-size: 30px;
+}
+.information .informationContainer .teksTwo {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+
+.homeBody .planets {
+    min-width: 100vw;
+    min-height: 100vh;
+    color: white;
+    margin-top: 250px;
+    position: relative;
+
+    & hr {
+        width: 60%;
+        position: absolute;
+        bottom: 20px;
+        right: 165px;
+    }
+
+    & .planetTitle {
+        font-size: 55px;
+        font-weight: 700;
+        display: block;
+        text-align: center;
+    }
+
+    & .planetsContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    & .swiperContainer {
+        position: relative;
+        left: -250px;
+        width: 50%;
+      }
+      
+      
+}
+
+  @media (max-width: 1700px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 58%;
+          }
+    
+          .swiper-slide img {
+            width: 800px;
+        }
+    }
+  }
+  @media (max-width: 1521px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 65%;
+
+          }
+          .contentPlanet{
+            position: relative;
+            left: -60px;
+          }
+    
+          .swiper-slide img {
+            width: 800px;
+        }
+    }
+  }
+  @media (max-width: 1425px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 65%;
+          }
+        .contentPlanet{
+            position: relative;
+            left: -60px;
+          }
+        .swiper-slide img {
+            width: 800px;
+        }
+    }
+  }
+  @media (max-width: 1345px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 70%;
+          }
+        
+    }
+  }
+  @media (max-width: 1225px) {
+    .homeBody .planets .planetsContent {
+        .swiperContainer {
+            width: 80%;
+          }
+        
+    }
+  }
+
+.homeBody .astronaut {
+    color: white;
+    min-height: 100vh;
+    margin-top: 300px;
+
+    & .astronautTitle {
+        font-weight: 700;
+        font-size: 55px;
+        text-align: center;
+
+    }
+    
+}
+.astoListContainer {
+    background-color: rgba(0, 80, 160, 0.3);
+    height: 160px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 0px 120px;
+
+
+    & .swiperAstoContainer {
+        width: 40%;
+        height: 600px;
+        overflow-x: hidden;
+        position: relative;
+        top: 40px;
+
+        & img {
+            width: 310px;
+            border-radius: 130px;
+            border: 8px solid rgba(0, 80, 160, 0.45);
+            position: relative;
+            top: 90px;
+        }
+
+        & .mySwiper {
+            width: 310px;
+            height: 100%;
+            overflow-x: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & .deskAstroContainer {
+        top: 20px;
+        width: 80%;
+        position: relative;
+
+        & .astroName {
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        & .exist {
+            font-weight: 300;
+            font-size: 15px;
+            position: relative;
+            top: -40px;
+        }
+
+        & .astroDetail {
+            position: absolute;
+            display: flex;
+            gap: 46px;
+            top: 160px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1650px) {
+    .deskAstro{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .deskAstroContainer{
+        width: 60%;
+    }
+}
+
+.homeBody .iss {
+    color: white;
+    min-height: 100vh;
+    margin: 150px 0px 0px 0px;
+
+    & .issContainer{
+        padding: 0px 120px;
+
+        & .issTitle {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        & .issSimpleDesk {
+            font-weight: 200;
+            font-size: 20px;
+            position: relative;
+            top: -50px;
+            width: 50%;
+        }
+    }
+}
+
+.issContentContainer {
+    position: relative;
+    padding: 47px 120px;
+    background-image: linear-gradient(90.53deg, rgba(0, 39, 78, 0.6) 19.41%, rgba(0, 39, 78, 0));
+
+    & .issDetail {
+        width: 50%;
+
+        & .detailOne {
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        & .detailIss {
+            font-weight: 300;
+            font-size: 17px;
+        }
+
+        & .issInfoContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 15px;
+        }
+
+    }
+    & .issImgContainer {
+        position: absolute;
+        right: 120px;
+        top: -160px;
+
+        & img {
+            width: 500px;
+        }
+    }
+    
+} 
+
+
+
+
+@media (max-width: 400px) {
+    .homeBody .home {
+        padding: 20px 20px 0px 20px
+    }
+    .homeBody .home .desk {
+        & .deskBtn {
+            width: 100px;
+        }
+    }
+    .homeBody .home .desk .earth{
+        right: -100px;
+    }
+    .homeBody .home .desk .earth img {
+        width: 200px;
+    }
+    .deskContainer p:nth-child(1) {
+        font-weight: 600;
+        font-size: 18px;
+        position: relative;
+    }
+    .deskContainer p:nth-child(2) {
+        font-size: 10px;
+        width: 80%;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .homeBody .home .listFeature {
+        color: white;
+        margin-top: 120px;
+    }
+    .homeBody .home .listFeature hr {
+     width: 90%;   
+    }
+    .homeBody .home .listFeature p:nth-child(1) {
+        font-size: 12px;
+    }
+    .homeBody .home .listFeature .cardList {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homeBody .home .listFeature  .cardList .cardSpecial {
+        width: 200px;
+        padding: 10px 15px;
+        background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+    }
+    .homeBody .home .listFeature  .cardList .card {
+        width: 200px;
+        height: 160px;
+        padding: 10px 15px;
+        background-image: linear-gradient(to bottom left, #0050a0cb, #00274E);
+    }
+    .homeBody .home .listFeature  .cardList .card .imgOne {
+        width: 120px;
+        left: -40px;
+        position: relative;
+    }
+    .homeBody .home .listFeature  .cardList .card .imgTwo {
+          width: 85px;
+          position: "absolute";
+          left: "0px";
+          top: "-15px"
+    }
+    .homeBody .home .listFeature  .cardList .card img {
+        width: 70px;
+    }
+    .homeBody .home .listFeature  .cardList .cardSpecial .satelite {
+        width: 80px;
+        left: -50px;
+    }
+    .homeBody .home .listFeature  .cardList .cardSpecial .cardTitleSpecial {
+        font-size: 12px;
+    }
+    .homeBody .home .listFeature  .cardList .card .cardTitle {
+        font-size: 12px;
+    }
+    
+    .homeBody .home .listFeature
+    .cardList .featureImgContainer {
+        width: 50%;
+        display: inline;
+    }
+    .cardSpecial .specialDeskContainer {
+        flex-direction: column;
+    }
+    .cardSpecial .specialDeskContainer .specialDesk .featureTitle  {
+        margin-top: 10px;
+        text-align: start;
+    }
+    .cardSpecial .specialDeskContainer .specialDesk .specialDeskInfo p:nth-child(1) {
+        font-size: 9px;
+        font-weight: 400;
+    }
+    .cardSpecial .specialDeskContainer .specialDesk {
+        position: relative;
+        left: 40px;
+    }
+    .cardSpecial .specialDeskContainer .specialDesk .specialDeskInfo {
+        font-size: 9px;
+        
+    }
+    .homeBody .home .listFeature  .cardList .card .cardDesk {
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .homeBody .information {
+        margin-top: 150px;
+        background-color: #01172E;
+        padding: 20px 20px;
+        backdrop-filter: blur(10px);
+    }
+    .information .informationContainer {
+        flex-direction: column;
+    }
+    .information .informationContainer .teksOne p {
+        font-size: 18px;
+    }
+    .information .informationContainer .teksTwo {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .homeBody .planets {
+        margin-top: 100px;
+        position: relative;
+
+        & hr {
+            display: flex;
+            justify-content: start;
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            width: 75%;
+            margin: 0px 30px;
+        }
+
+        & .planetTitle {
+            font-size: 30px;
+        }
+    
+        & .planetsContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        & .swiperContainer {
+            position: relative;
+            left: 0px;
+            width: 100%;
+          }
+    }
+
+    .homeBody .astronaut {
+        margin-top: 200px;
+        margin-bottom: 900px;
+        & .astronautTitle {
+            font-size: 35px;
+        }
+
+    }
+
+    .astoListContainer {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+        height: 100%;
+
+    
+    
+        & .swiperAstoContainer {
+            width: 200px;
+            height: 350px;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -20px;
+
+            & img {
+                width: 200px;
+                height: 280px;
+                border-radius: 80px;
+                top: 0px
+            }
+            
+        }
+        & .deskAstroContainer {
+            top: 0px;
+            width: 80%;
+
+            & .astroName {
+                font-weight: 700;
+                font-size: 25px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            & .exist {
+                text-align: center;
+            }
+            & .astroDetail {
+                flex-direction: column;
+                gap: 46px;
+                top: 160px;
+            }
+        }
+    }
+
+    .homeBody .iss {
+        margin: 150px 0px 0px 0px;
+    
+        & .issContainer{
+            padding: 0px 30px 90px 30px;
+    
+            & .issTitle {
+                font-size: 30px;
+                text-align: center;
+            }
+    
+            & .issSimpleDesk {
+                text-align: center;
+                font-size: 15px;
+                position: relative;
+                top: 0px;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .issContentContainer {
+        position: relative;
+        padding: 47px 30px;
+        background-image: linear-gradient(90.53deg, rgba(0, 39, 78, 0.6) 19.41%, rgba(0, 39, 78, 0));
+    
+        & .issDetail {
+            width: 100%;
+    
+            & .detailOne {
+                font-size: 30px;
+            }
+    
+            & .detailIss {
+                font-weight: 300;
+                font-size: 15px;
+            }
+
+            & .issInfoContainer {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 60px;
+                
+                & .butnIss {
+                    border-radius: 12px;
+                    width: 200px;
+                    height: 30px;
+                }
+            }
+        }
+        & .issImgContainer {
+            position: absolute;
+            right: 10px;
+            top: -90px;
+    
+            & img {
+                width: 200px;
+            }
+        }
+    } 
+    
+    
+    
+}
+
+
